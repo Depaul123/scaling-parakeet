@@ -1,14 +1,30 @@
 <p id="notice"><%= notice %></p>
 
-<p>
+<div class="panel-body">
+  <div class="panel panel-default">
+<p class ="panel-heading">
+    <strong>Users</strong>
+  </p>
+  
+  <div class="panel body">
+    
+  <p>
   <strong>Name:</strong>
   <%= @user.name %>
 </p>
+
 
 <p>
   <strong>Email:</strong>
   <%= @user.email %>
 </p>
+</div>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<p class = "panel-footer">
+
+<%= link_to 'Edit', edit_user_path(@user), class: "btn btn-danger" %> |
+<%= link_to 'Back',  users_path, class: "btn btn-danger" %>
+</p>
+</div>
+</div>
+

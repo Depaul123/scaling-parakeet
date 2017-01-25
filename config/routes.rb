@@ -3,7 +3,9 @@ Rails.application.routes.draw do
 
   get 'static_pages/help'
 
-  resources :microposts
+  get 'static_pages/about'
+
   resources :users
+  resources :microposts
   root 'users#index'
 end
